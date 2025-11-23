@@ -238,7 +238,8 @@ def exponent_string(n: int) -> str:
 
 
 def get_img(img_path="../images/cameraman.tif"):
-    img = np.array(Image.open(img_path)).astype('float64') / 255
+    # Allow any image as input
+    img = np.array(Image.open(img_path).convert("L")).astype('float64') / 255
     return img
 
 
