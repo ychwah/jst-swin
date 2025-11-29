@@ -5,8 +5,8 @@ MODEL:
     NUM_PROPOSALS: 300
     NUM_CLASSES: 2
 DATASETS:
-  TRAIN: ("icdar2015_train",)
-  TEST:  ("icdar2015_test",)
+  TRAIN: ("icdar_2015_train",)
+  TEST:  ("icdar_2015_test",)
 SOLVER:
   STEPS: (6000,)
   MAX_ITER: 10000
